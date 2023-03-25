@@ -15,11 +15,12 @@ const Navbar = () => {
     return (
         <div className={classes.navbar}>
           <MyButton onClick={logout}>
-            Выйти
+            Logout
           </MyButton>
         <div className={classes.navbar__links}>
           <Link to="/about">About</Link>
-          <Link to="/posts"> Comics</Link>
+          <Link to="/posts">Comics</Link>
+          <Link to="/upload">Upload</Link>
         </div>
       </div>
     );
