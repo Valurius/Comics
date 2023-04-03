@@ -5,7 +5,7 @@ export const UploadFile = () => {
     const [selectedFile, setSelectedFile] = useState(null);
     const [uploaded, setUploaded] = useState();
     
-    const hostUrl = '/'
+    const hostUrl = 'https://localhost:7065/api/ComicPhotos/savePhoto'
 
     const handleChange = (e) => {
         console.log(e.target.files);
@@ -25,7 +25,7 @@ export const UploadFile = () => {
             method: 'POST',
             body: formData,
         });
-        
+        console.log(res)
     };
 
     const handlePick= () => {

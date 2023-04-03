@@ -21,6 +21,7 @@ function Posts() {
 
   useEffect( () => {
     fetchPosts()
+    console.log(posts)
   }, [])
 
   return (
